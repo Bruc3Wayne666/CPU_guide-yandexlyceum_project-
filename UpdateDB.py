@@ -1,0 +1,131 @@
+from PyQt5.QtWidgets import QLineEdit, QDialog
+
+
+upDialog = QDialog()
+upDialog.setFixedSize(400, 260)
+upDialog.setWindowTitle('Add new CPU')
+upDialog.setStyleSheet("background: #2F4F4F")
+icon = QtGui.QIcon()
+icon.addPixmap(QtGui.QPixmap("cpu.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+
+idLine = QLineEdit(upDialog)
+idLine.resize(115, 20)
+idLine.setStyleSheet('background: #90EE90')
+idLine.move(90, 20)
+
+modelLine = QLineEdit(upDialog)
+modelLine.resize(115, 20)
+modelLine.setStyleSheet('background: #90EE90')
+modelLine.move(90, 60)
+
+yearLine = QLineEdit(upDialog)
+yearLine.resize(115, 20)
+yearLine.setStyleSheet('background: #90EE90')
+yearLine.move(90, 100)
+
+priceLine = QLineEdit(upDialog)
+priceLine.resize(115, 20)
+priceLine.setStyleSheet('background: #90EE90')
+priceLine.move(90, 140)
+
+archLine = QLineEdit(upDialog)
+archLine.resize(115, 20)
+archLine.setStyleSheet('background: #90EE90')
+archLine.move(90, 180)
+
+coresLine = QLineEdit(upDialog)
+coresLine.resize(115, 20)
+coresLine.setStyleSheet('background: #90EE90')
+coresLine.move(280, 20)
+
+threadsLine = QLineEdit(upDialog)
+threadsLine.resize(115, 20)
+threadsLine.setStyleSheet('background: #90EE90')
+threadsLine.move(280, 60)
+
+fabLine = QLineEdit(upDialog)
+fabLine.resize(115, 20)
+fabLine.setStyleSheet('background: #90EE90')
+fabLine.move(280, 100)
+
+tdpLine = QLineEdit(upDialog)
+tdpLine.resize(115, 20)
+tdpLine.setStyleSheet('background: #90EE90')
+tdpLine.move(280, 140)
+
+imgLine = QLineEdit(upDialog)
+imgLine.resize(115, 20)
+imgLine.setStyleSheet('background: #90EE90')
+imgLine.move(280, 180)
+
+idLabel = QLabel(upDialog)
+idLabel.resize(20, 20)
+idLabel.setStyleSheet('color: White')
+idLabel.move(67, 20)
+idLabel.setText('id:')
+
+modelLabel = QLabel(upDialog)
+modelLabel.resize(61, 20)
+modelLabel.setStyleSheet('color: White')
+modelLabel.move(20, 60)
+modelLabel.setText('Model name:')
+
+yearLabel = QLabel(upDialog)
+yearLabel.resize(31, 20)
+yearLabel.setStyleSheet('color: White')
+yearLabel.move(56, 100)
+yearLabel.setText('Year:')
+
+priceLabel = QLabel(upDialog)
+priceLabel.resize(31, 20)
+priceLabel.setStyleSheet('color: White')
+priceLabel.move(56, 140)
+priceLabel.setText('Price:')
+
+archLabel = QLabel(upDialog)
+archLabel.resize(61, 20)
+archLabel.setStyleSheet('color: White')
+archLabel.move(20, 180)
+archLabel.setText('Architecture:')
+
+coresLabel = QLabel(upDialog)
+coresLabel.resize(41, 20)
+coresLabel.setStyleSheet('color: White')
+coresLabel.move(236, 20)
+coresLabel.setText('Cores:')
+
+threadsLabel = QLabel(upDialog)
+threadsLabel.resize(51, 20)
+threadsLabel.setStyleSheet('color: White')
+threadsLabel.move(226, 60)
+threadsLabel.setText('Threads:')
+
+fabLabel = QLabel(upDialog)
+fabLabel.resize(31, 20)
+fabLabel.setStyleSheet('color: White')
+fabLabel.move(246, 100)
+fabLabel.setText('Fab:')
+
+tdpLabel = QLabel(upDialog)
+tdpLabel.resize(31, 20)
+tdpLabel.setStyleSheet('color: White')
+tdpLabel.move(246, 140)
+tdpLabel.setText('TDP:')
+
+imgLabel = QLabel(upDialog)
+imgLabel.resize(51, 20)
+imgLabel.setStyleSheet('color: White')
+imgLabel.move(220, 180)
+imgLabel.setText('Type smt:')
+
+commitBtn = QPushButton(upDialog)
+commitBtn.setStyleSheet('background: #90EE90')
+commitBtn.setText('OK')
+commitBtn.resize(90, 30)
+commitBtn.move(115, 220)
+
+cancelBtn = QPushButton(upDialog)
+cancelBtn.setStyleSheet('background: #90EE90')
+cancelBtn.setText('Cancel')
+cancelBtn.resize(90, 30)
+cancelBtn.move(205, 220)
